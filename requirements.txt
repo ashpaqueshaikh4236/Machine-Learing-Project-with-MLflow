@@ -7,9 +7,9 @@ matplotlib
 python-box==7.2.0
 pyYAML
 tqdm
-ensure==1.0.2
+ensure==1.0.4
 joblib
 types-PyYAML
 Flask
 Flask-Cors
-#-e .
+-e .
