@@ -7,10 +7,10 @@ from mlproject.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeli
 STAGE_NAME = "Data Ingestion Stage"
 
 try:
-    logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")
+    logger.info(f" <<<<<----- {STAGE_NAME} started ----->>>>> ")
     data_ingestion = DataIngestionTrainingPipeline()
     data_ingestion.main()
-    logger.info(f">>>>> stage {STAGE_NAME} completed <<<<<")
+    logger.info(f" ----->>>>> {STAGE_NAME} completed <<<<<----- ")
 except Exception as e:
     logger.exception(e)
     raise e
@@ -20,10 +20,10 @@ except Exception as e:
 STAGE_NAME = "Data Validation Stage"
 
 try:
-    logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")
+    logger.info(f" <<<<<----- {STAGE_NAME} started ----->>>>> ")
     data_validation = DataValidtationTrainingPipeline()
     data_validation.main()
-    logger.info(f">>>>> stage {STAGE_NAME} completed <<<<<")
+    logger.info(f" ----->>>>> {STAGE_NAME} completed <<<<<----- ")
 except Exception as e:
     logger.exception(e)
     raise e
@@ -33,10 +33,10 @@ except Exception as e:
 STAGE_NAME = "Data Transformation Stage"
 
 try:
-    logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")
+    logger.info(f" <<<<<----- {STAGE_NAME} started ----->>>>> ")
     data_validation = DataTransformationTrainingPipeline()
     data_validation.main()
-    logger.info(f">>>>> stage {STAGE_NAME} completed <<<<<")
+    logger.info(f" ----->>>>> {STAGE_NAME} completed <<<<<----- ")
 except Exception as e:
     logger.exception(e)
     raise e
@@ -46,10 +46,10 @@ except Exception as e:
 STAGE_NAME = "Model Trainer Stage"
 
 try:
-    logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")
+    logger.info(f" <<<<<----- {STAGE_NAME} started ----->>>>> ")
     model_trainer = ModelTrainerTrainingPipeline()
     model_trainer.main()
-    logger.info(f">>>>> stage {STAGE_NAME} completed <<<<<")
+    logger.info(f" ----->>>>> {STAGE_NAME} completed <<<<<----- ")
 except Exception as e:
     logger.exception(e)
     raise e
