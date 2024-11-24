@@ -1,5 +1,5 @@
 from mlproject.config.configuraion import ConfigurationManger
-from mlproject.components.data_transforamtion_03 import DataTransformation
+from mlproject.components.data_transforamtion import DataTransformation
 from mlproject import logger
 
 

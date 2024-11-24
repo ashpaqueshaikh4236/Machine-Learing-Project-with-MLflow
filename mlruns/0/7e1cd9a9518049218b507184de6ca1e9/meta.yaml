@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/AQSA/Desktop/Machine-Learning-Project-with-MLflow/mlruns/0/7e1cd9a9518049218b507184de6ca1e9/artifacts
+end_time: 1732438566121
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7e1cd9a9518049218b507184de6ca1e9
+run_name: bittersweet-wren-790
+run_uuid: 7e1cd9a9518049218b507184de6ca1e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732438559213
+status: 3
+tags: []
+user_id: AQSA
