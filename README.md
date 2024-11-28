@@ -26,11 +26,11 @@ https://github.com/ashpaqueshaikh4236/Machine-Learning-Project-with-MLflow.git
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -p venv python=3.12 -y
+python -m venv venv
 ```
 
 ```bash
-conda activate venv
+.\venv\Scripts\Activate
 ```
 
 
