@@ -1,4 +1,4 @@
-from mlproject.config.configuraion import ConfigurationManger
+from mlproject.config.configuration import ConfigurationManager
 from mlproject.components.data_validation  import DataValidation
 from mlproject import logger
 
@@ -11,7 +11,7 @@ class DataValidtationTrainingPipeline:
 
 
     def main(self):
-        config = ConfigurationManger()
+        config = ConfigurationManager()
         data_validation_config = config.get_data_validation_config()
         data_validation = DataValidation(config=data_validation_config)
         data_validation.validate_all_columns()

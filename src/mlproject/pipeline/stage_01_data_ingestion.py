@@ -1,4 +1,4 @@
-from mlproject.config.configuraion import ConfigurationManger
+from mlproject.config.configuration import ConfigurationManager
 from mlproject.components.data_ingestion  import DataIngestion
 from mlproject import logger
 
@@ -10,7 +10,7 @@ class DataIngestionTrainingPipeline:
         pass
         
     def main(self):
-        config = ConfigurationManger()
+        config = ConfigurationManager()
         data_ingetsion_config = config.get_data_ingestion_config()
         data_ingetsion = DataIngestion(config=data_ingetsion_config)
         data_ingetsion.download_file()

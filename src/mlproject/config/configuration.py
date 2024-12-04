@@ -3,7 +3,7 @@ from mlproject.utils.common import read_yaml,create_directories
 from mlproject.entity.config_entity  import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig,ModelEvaluationConfig
 
 
-class ConfigurationManger:
+class ConfigurationManager:
     def __init__(self, config_filepath = CONFIG_FILE_PATH, params_filepath = PARAM_FILE_PATH, schema_filepath = SCHEMA_FILE_PATH ):
         
             self.config = read_yaml(config_filepath)

@@ -1,4 +1,4 @@
-from mlproject.config.configuraion import ConfigurationManger
+from mlproject.config.configuration import ConfigurationManager
 from mlproject.components.model_evaluation import ModelEvaluation
 from mlproject import logger
 
@@ -11,7 +11,7 @@ class ModelEvaluationTrainingPipeline:
 
 
     def main(self):
-        config = ConfigurationManger()
+        config = ConfigurationManager()
         model_evaluation_config = config.get_evaluation_config()
         model_trainer_config = ModelEvaluation(config=model_evaluation_config)
         model_trainer_config.log_into_mlflow()
