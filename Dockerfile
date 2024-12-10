@@ -1,4 +1,4 @@
-FROM python:3.12-slim-bluster
+FROM python:3.12-slim
 
 RUN apt update -y && apt install awscii -y
 WORKDIR /app
