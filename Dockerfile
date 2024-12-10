@@ -1,7 +1,7 @@
 FROM python:3.12-slim
 
-RUN apt update -y && apt install awscii -y
 WORKDIR /app
+RUN apt update -y && apt install awscii -y
 
 COPY . /app/
 RUN pip install -r requiements.txt
