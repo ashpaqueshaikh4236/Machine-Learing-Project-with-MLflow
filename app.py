@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 from mlproject.pipeline.prediction import PredicitonPipeline
 
-
 app = Flask(__name__)
 
 @app.route('/', methods=(['GET']))
